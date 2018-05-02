@@ -1,0 +1,24 @@
+/* start reCAPTCHA styles */
+
+form>div{
+    margin:1em;
+}
+
+/* writes to small text above reCAPTCHA upon failure */
+
+.dateFeedback{
+    font-style:italic;
+    font-size:70%;
+    font-weight:bold;
+    color:#f00;
+}
+
+input:required{
+    border: 1px solid red;
+}
+
+input:optional, textarea:optional{
+    background-color:#f1f1f1;
+    border:1px solid #ccc;
+}
+

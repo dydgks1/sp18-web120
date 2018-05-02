@@ -1,0 +1,146 @@
+body{
+        background-color:lightgray;
+}
+div#wrapper{
+        width:1000px;
+        margin: 0 auto;
+        background-color:blanchedalmond;
+        overflow:auto;
+        padding:20px;
+}
+div.embed-container{
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+    margin:auto;
+    max-width:98%;
+}
+div.embed-container iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+img{
+        width:300px;
+        float:right;
+        border:1px solid;
+        padding:10px;
+        background-color:beige;
+        margin:0 20px 20px 65px;    
+}
+.logo{
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+nav#primary{
+        background:black;
+        height:50px;
+        line-height:50px;    
+}
+nav#primary ul{
+        width:950px;
+        margin:0 auto;
+    }
+nav#primary li{
+        float:left;
+        width:16%;
+        list-style-type:none;
+        font-size:1.3em;
+        text-align:center;
+        position:relative;
+}
+}
+.welcome nav li:nth-child(1),
+.big nav li:nth-child(2),
+.aia nav li:nth-child(3),
+.flowchart nav li:nth-child(4)
+.finalproject nav li:nth-child(5)
+.contactnick nav li:nth-child(6)
+{
+background:lightgray;
+}    
+
+nav a {
+        color:white;
+        text-decoration: none;
+        display:block;
+}
+nav a:hover{
+        background:lightgray;
+}
+footer{
+    clear:both;
+}
+/*START RESPONSIVE STYLES*/
+
+/* DESKTOP */
+
+@media all and (min-width:1400px){
+    
+    div.wrapper{
+        width:80%;
+        margin:auto;
+    }
+    
+    section{
+        width:65%;
+        float:left;
+    }
+    
+    aside{
+        width:34%;
+        float:right;
+    }
+    
+    img.desktop{
+        float:left;
+        width:50%;
+    }
+    
+    img.tablet, img.phone{
+        display:none;
+    }
+    
+    /* CHANGE BACKGROUND COLOR OF NAVIAGTION ON SELECTED PAGE */
+   
+    ul.topnav li a.selected{
+        background-color: #ccc;
+        color:#000;
+    }
+}
+@media all and (min-width:737px) and (max-width:1399px){
+    section{
+        width:60%;
+        float:left;
+    }
+    aside{
+        width:39%;
+        float:right;
+    }
+    img.tablet{
+        width:100%;
+    }
+    img.phone, img.desktop{
+        display:none;
+    }
+     ul.topnav li a.selected{
+        background-color: #ccc;
+        color:#000;
+    }
+}
+/*PHONE*/
+@media all and (max-width:736px){
+    
+    img.phone{
+        width:100%;
+    }
+    
+    img.tablet, img.desktop{
+        display:none;
+    }
+}
